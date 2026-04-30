@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Catálogo de Filmes 🎬</h1>
+    <p class="subtitulo">Explore os títulos. Clique no pôster ou no card para selecionar seus favoritos e depois clique em "Mostrar seleção".</p>
+
+        <div class="toolbar">
+            <button id="showSelection">Mostrar seleção</button>
+        </div>
+
+        <div class="cards" id="catalog">
+            <!-- Movie card 1 -->
+            <label class="card" data-title="A Viagem de Chihiro" data-year="2001" data-genre="Animação / Fantasia" data-desc="Uma menina percorre um mundo mágico para salvar seus pais." >
+                <input type="checkbox" class="select-movie">
+                <img src="Assets/chihiro.jpg" alt="Pôster A Viagem de Chihiro">
+                <h2>A Viagem de Chihiro</h2>
+                <p class="meta">2001 · Animação</p>
+            </label>
+
+            <!-- Movie card 2 -->
+            <label class="card" data-title="O Serviço de Entregas da Kiki" data-year="1989" data-genre="Animação / Aventura" data-desc="Uma jovem feiticeira parte em uma jornada de independência com sua inseparável vassoura">
+                <input type="checkbox" class="select-movie">
+                <img src="Assets/entregasDaKiki.jpg" alt="Pôster O Serviço de Entregas da Kiki">
+                <h2>O Serviço de Entregas da Kiki</h2>
+                <p class="meta">1989 · Animação</p>
+            </label>
+
+            <!-- Movie card 3 -->
+            <label class="card" data-title="O Menino e a Garça" data-year="2023" data-genre="Animação / Drama" data-desc="Uma fábula sensível sobre perda e imaginação.">
+                <input type="checkbox" class="select-movie">
+                <img src="Assets/OMeninoEAGarca.jpg" alt="Pôster O Menino e a Garça">
+                <h2>O Menino e a Garça</h2>
+                <p class="meta">2023 · Animação</p>
+            </label>
+
+            <!-- Movie card 4 -->
+            <label class="card" data-title="Ponyo" data-year="2008" data-genre="Animação / Família" data-desc="Uma amizade entre um garoto e uma criatura do mar que quer se tornar humana.">
+                <input type="checkbox" class="select-movie">
+                <img src="Assets/Ponyo.jpg" alt="Pôster Ponyo">
+                <h2>Ponyo</h2>
+                <p class="meta">2008 · Animação</p>
+            </label>
+
+            <!-- Movie card 5 -->
+            <label class="card" data-title="Princesa Mononoke" data-year="1997" data-genre="Animação / Ação" data-desc="Conflito entre deuses da floresta e a expansão humana.">
+                <input type="checkbox" class="select-movie">
+                <img src="Assets/PrincesaMononoke.jpg" alt="Pôster Princesa Mononoke">
+                <h2>Princesa Mononoke</h2>
+                <p class="meta">1997 · Animação</p>
+            </label>
+
+        </div>
+
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
