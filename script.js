@@ -1,12 +1,10 @@
-// Movie catalog interactions: simple selection summary (no search, no modal)
+
 document.addEventListener('DOMContentLoaded', () => {
     const catalog = document.getElementById('catalog')
     const showSelection = document.getElementById('showSelection')
     const resultado = document.getElementById('resultado')
-    // When clicking on a card (not the checkbox), let the default label behavior toggle the checkbox.
-    // No modal: clicking the card toggles the checkbox because each card is a label wrapping the checkbox.
 
-    // Show selection summary
+
     showSelection.addEventListener('click', () => {
         const selected = Array.from(catalog.querySelectorAll('.select-movie:checked'))
             .map(cb => cb.closest('.card'))
